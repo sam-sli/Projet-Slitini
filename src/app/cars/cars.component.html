@@ -1,0 +1,37 @@
+<div class="container py-5">
+    <header class="text-center">
+      <h1 class="display-4">Ismail slitini</h1>
+      <p class="font-italic mb-0">this my list of Cars.</p>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    </header>
+    <div class="upcoming py-5">
+        <div class="container">
+        <div class="row pb-4 text-center">
+            <div class="col-md-12">
+                
+                
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 box border py-1"  *ngFor="let item of cars">
+                <figure class="rounded p-3 bg-white shadow-sm"   >
+                    <img [src]="item.image"  alt="" class="w-100 card-img-top">
+                    <figcaption class="p-4 card-img-bottom">
+                      <h2 class="h5 font-weight-bold mb-2 font-italic"> {{ item.N_immatriculation }}</h2>
+                      
+                      <span type="button" (click)="goToCarsDetail(item)" class="btn btn-secondary">More info</span>
+                    </figcaption>
+                  </figure>
+            </div>
+            
+            
+        
+        </div>
+    
+    </div>
+    </div>
+          
+      
+  
+  
